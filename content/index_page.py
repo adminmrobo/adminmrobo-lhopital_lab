@@ -22,7 +22,7 @@ def build(B, chs):
     B.GLOSS = {'극한': 'x가 어떤 값에 한없이 다가갈 때 식의 값이 향해 가는 곳. 꼭 그 값이 될 필요는 없다.',
                '부정형': '0/0, ∞/∞처럼 대입만으로는 값을 정할 수 없는 꼴. 「답이 없다」가 아니라 「아직 모른다」는 뜻.'}
     o = [B.head(B.SERIES + ' · 오리엔테이션', '미분이 아직 헷갈리는 학생도 따라오는 로피탈의 정리 12장 + 실전 연습장. 박사 선생님과 두 조교, 수강생 6명이 함께하는 연구실 해설 시리즈.')]
-    o.append('<nav class="top" aria-label="목차"><a class="logo" href="index.html">로피탈 교실</a><a href="#three">3줄 요약</a><a href="#cast">등장인물</a><a href="#pillars">네 마당</a><a href="#tracks">과정</a><a href="#toc">목차</a><a href="#how">수업 방식</a><a href="practice/index.html">실전 연습장</a></nav><div id="prog"></div>')
+    o.append('<nav class="top" aria-label="목차"><a class="logo" href="index.html">로피탈 교실</a><a href="#three">3줄 요약</a><a href="#check">1분 점검</a><a href="#cast">등장인물</a><a href="#pillars">네 마당</a><a href="#tracks">과정</a><a href="#toc">목차</a><a href="#how">수업 방식</a><a href="practice/index.html">실전 연습장</a></nav><div id="prog"></div>')
     o.append(B.cover_html('cover_00', '로피탈 교실', '오리엔테이션 · 00', '0/0의 정체를 밝히는 수업 — 12장 + 실전 연습장', '로피탈 교실 표지 — 박사, 조교 둘, 수강생 여섯이 칠판의 0/0 앞에 모인 강의실'))
     o.append('''<header class="hero"><div class="wrap"><div class="kicker">연구실 해설 시리즈 · 미적분 입문</div><h1>로피탈 교실 — 0/0의 정체를 밝히는 수업</h1>
 <p class="q">핵심 질문 — 0 ÷ 0처럼 보이는 식의 진짜 값은 어떻게 알아낼까? 그리고 그 방법은 언제 틀릴까?</p>
@@ -34,6 +34,10 @@ def build(B, chs):
 <li><b>왜 중요한가:</b> 순간 속도, 복리 이자의 한계, 함수끼리의 자라는 속도 비교가 모두 이 질문에서 나와요. 그리고 조건을 무시하면 그럴듯한 오답이 나와서, 오용 사례를 아는 것이 규칙만큼 중요해요.</li>
 <li><b>생활·현장에서는:</b> 속도계, 은행 이자 계산, 컴퓨터의 0/0 처리, AI 손실 함수의 0 · log 0 같은 곳에서 「다가갈 때의 값」을 다뤄요.</li></ol>
 <p class="note">장마다 20~25분이면 충분해요. 순서대로 읽으면 가장 편하고, 01~03장은 로피탈을 배우기 위한 준비 운동이에요.</p></div></div>''')
+    o.append('<section class="level" id="check"><div class="wrap"><h2>시작 전 1분 점검 — 어디서부터 읽을까</h2><p>세 문제를 풀어 보세요. 틀려도 괜찮아요. 틀린 문제가 알려 주는 장부터 시작하면 돼요(기록은 저장되지 않아요).</p><div class="panel"><div class="ptitle">1분 점검</div><div data-w="exam" data-o="' + esc(json.dumps({'qs': [
+        ['1/n은 n이 커지면 어디로 「다가가나요」?', ['1', '0', '∞'], 1, '극한(도착 예정지)은 0. 헷갈렸다면 01장부터 시작하세요.'],
+        ['y = x²의 그래프에서 x = 3 자리의 기울기는?', ['9', '6', '3'], 1, '(x²)′ = 2x → 6. 높이 9와 헷갈렸다면 03장 「기울기와 미분 다시 잡기」를 먼저 보세요.'],
+        ['x = 0을 넣으면 0/0이 되는 식의 극한은?', ['언제나 0', '언제나 1', '식마다 다르다'], 2, '0/0은 「정해지지 않은 꼴」. 헷갈렸다면 02장부터. 셋 다 맞혔다면 04장부터 읽어도 좋아요.']]}, ensure_ascii=False)) + '"></div></div></div></section>')
     castl = ''.join('<div>%s<div><span class="role">%s</span><b>%s</b><span>%s</span></div></div>' % (img(w, B.PEOPLE[w][2], cls=''), esc(B.PEOPLE[w][1]), esc(B.PEOPLE[w][0]), esc(B.PEOPLE[w][3]))
                     for w in ['doc', 'fly', 'robo', 'sia', 'moa', 'asst', 'x1', 'x2', 'x3'])
     g1 = ''.join(img(w, 'e13', cls='') for w in ['sia', 'asst', 'x1'])
