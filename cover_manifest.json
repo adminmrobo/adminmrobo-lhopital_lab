@@ -1,0 +1,403 @@
+{
+ "series_ko": "로피탈 교실 — 0/0의 정체를 밝히는 수업",
+ "title_ko": "로피탈 교실",
+ "site_title": "로피탈 교실 · 미분이 아직 헷갈리는 학생도 따라오는 로피탈의 정리 12장 + 실전 연습장",
+ "site_url": "https://adminmrobo.github.io/lhopital_lab/",
+ "updated": "2026-11-25",
+ "ontology": {
+  "pages": [
+   {
+    "path": "01_limits.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "02_zero_over_zero.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "03_slope_derivative.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "04_tangent_ratio.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "05_lhopital_rule.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "06_repeat_and_stop.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "07_infinity_race.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "08_other_forms.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "09_mistakes_calc.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "10_mistakes_conditions.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "11_history_ai.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "12_final_review.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "index.html",
+    "kg": false,
+    "export": false
+   }
+  ],
+  "files": []
+ },
+ "i18n": {
+  "langs": [
+   "ko"
+  ],
+  "pages": {
+   "ko": 14
+  },
+  "readme_langs": [
+   "ko"
+  ]
+ },
+ "languages": [
+  "ko"
+ ],
+ "items": [
+  {
+   "id": "cover_00",
+   "role": "cover",
+   "path": "index.html#top",
+   "status": "substitute",
+   "characters": [
+    "doc",
+    "fly",
+    "robo",
+    "sia",
+    "moa",
+    "asst"
+   ],
+   "note": "대체 표지: make_covers.py, 480×270 격자 4배 NEAREST, 무손실 WebP",
+   "file": "img/cover/cover_00.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    480,
+    270
+   ]
+  },
+  {
+   "id": "cover_01",
+   "role": "cover",
+   "path": "01_limits.html#top",
+   "status": "substitute",
+   "characters": [
+    "doc",
+    "fly",
+    "robo",
+    "sia"
+   ],
+   "note": "대체 표지: make_covers.py, 480×270 격자 4배 NEAREST, 무손실 WebP",
+   "file": "img/cover/cover_01.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    480,
+    270
+   ]
+  },
+  {
+   "id": "cover_02",
+   "role": "cover",
+   "path": "02_zero_over_zero.html#top",
+   "status": "substitute",
+   "characters": [
+    "doc",
+    "fly",
+    "robo",
+    "moa"
+   ],
+   "note": "대체 표지: make_covers.py, 480×270 격자 4배 NEAREST, 무손실 WebP",
+   "file": "img/cover/cover_02.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    480,
+    270
+   ]
+  },
+  {
+   "id": "cover_03",
+   "role": "cover",
+   "path": "03_slope_derivative.html#top",
+   "status": "substitute",
+   "characters": [
+    "doc",
+    "fly",
+    "robo",
+    "asst"
+   ],
+   "note": "대체 표지: make_covers.py, 480×270 격자 4배 NEAREST, 무손실 WebP",
+   "file": "img/cover/cover_03.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    480,
+    270
+   ]
+  },
+  {
+   "id": "cover_04",
+   "role": "cover",
+   "path": "04_tangent_ratio.html#top",
+   "status": "substitute",
+   "characters": [
+    "doc",
+    "fly",
+    "robo",
+    "sia"
+   ],
+   "note": "대체 표지: make_covers.py, 480×270 격자 4배 NEAREST, 무손실 WebP",
+   "file": "img/cover/cover_04.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    480,
+    270
+   ]
+  },
+  {
+   "id": "cover_05",
+   "role": "cover",
+   "path": "05_lhopital_rule.html#top",
+   "status": "substitute",
+   "characters": [
+    "doc",
+    "fly",
+    "robo",
+    "robo"
+   ],
+   "note": "대체 표지: make_covers.py, 480×270 격자 4배 NEAREST, 무손실 WebP",
+   "file": "img/cover/cover_05.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    480,
+    270
+   ]
+  },
+  {
+   "id": "cover_06",
+   "role": "cover",
+   "path": "06_repeat_and_stop.html#top",
+   "status": "substitute",
+   "characters": [
+    "doc",
+    "fly",
+    "robo",
+    "x2"
+   ],
+   "note": "대체 표지: make_covers.py, 480×270 격자 4배 NEAREST, 무손실 WebP",
+   "file": "img/cover/cover_06.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    480,
+    270
+   ]
+  },
+  {
+   "id": "cover_07",
+   "role": "cover",
+   "path": "07_infinity_race.html#top",
+   "status": "substitute",
+   "characters": [
+    "doc",
+    "fly",
+    "robo",
+    "x3"
+   ],
+   "note": "대체 표지: make_covers.py, 480×270 격자 4배 NEAREST, 무손실 WebP",
+   "file": "img/cover/cover_07.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    480,
+    270
+   ]
+  },
+  {
+   "id": "cover_08",
+   "role": "cover",
+   "path": "08_other_forms.html#top",
+   "status": "substitute",
+   "characters": [
+    "doc",
+    "fly",
+    "robo",
+    "moa"
+   ],
+   "note": "대체 표지: make_covers.py, 480×270 격자 4배 NEAREST, 무손실 WebP",
+   "file": "img/cover/cover_08.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    480,
+    270
+   ]
+  },
+  {
+   "id": "cover_09",
+   "role": "cover",
+   "path": "09_mistakes_calc.html#top",
+   "status": "substitute",
+   "characters": [
+    "doc",
+    "fly",
+    "robo",
+    "fly"
+   ],
+   "note": "대체 표지: make_covers.py, 480×270 격자 4배 NEAREST, 무손실 WebP",
+   "file": "img/cover/cover_09.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    480,
+    270
+   ]
+  },
+  {
+   "id": "cover_10",
+   "role": "cover",
+   "path": "10_mistakes_conditions.html#top",
+   "status": "substitute",
+   "characters": [
+    "doc",
+    "fly",
+    "robo",
+    "asst"
+   ],
+   "note": "대체 표지: make_covers.py, 480×270 격자 4배 NEAREST, 무손실 WebP",
+   "file": "img/cover/cover_10.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    480,
+    270
+   ]
+  },
+  {
+   "id": "cover_11",
+   "role": "cover",
+   "path": "11_history_ai.html#top",
+   "status": "substitute",
+   "characters": [
+    "doc",
+    "fly",
+    "robo",
+    "moa"
+   ],
+   "note": "대체 표지: make_covers.py, 480×270 격자 4배 NEAREST, 무손실 WebP",
+   "file": "img/cover/cover_11.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    480,
+    270
+   ]
+  },
+  {
+   "id": "cover_12",
+   "role": "cover",
+   "path": "12_final_review.html#top",
+   "status": "substitute",
+   "characters": [
+    "doc",
+    "fly",
+    "robo",
+    "doc"
+   ],
+   "note": "대체 표지: make_covers.py, 480×270 격자 4배 NEAREST, 무손실 WebP",
+   "file": "img/cover/cover_12.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    480,
+    270
+   ]
+  },
+  {
+   "id": "cover_practice",
+   "role": "cover",
+   "path": "practice/index.html#top",
+   "status": "substitute",
+   "characters": [
+    "doc",
+    "asst",
+    "moa",
+    "robo"
+   ],
+   "note": "대체 표지",
+   "file": "img/cover/cover_practice.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    480,
+    270
+   ]
+  }
+ ]
+}
