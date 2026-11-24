@@ -35,7 +35,7 @@
 - `content/` — 장별 내용 데이터, `tools/build.py` — 조립 스크립트 (`python3 tools/build.py`)
 - `tools/make_covers.py` — 픽셀아트 대체 표지, `tools/check_pages.py` — 헤드리스 크롬 점검(390·1280px, 콘솔 오류, 빈 캐릭터 그림, 대결)
 - `img/source/` — 원자료 인포그래픽(사용자 제공), `img/cover/`·`img/og/` — 표지와 공유 미리보기
-- `docs/IMG_specs.md` — 표지 그림 제작 명세서(16비트 RPG 픽셀아트 지시문), `docs/WORK_NOTES.md` — 사실 카드·원자료 바로잡기·검산·검증 기록, `docs/PERSONA_REVIEW.md` — 페르소나 검사 결과
+- `docs/IMG_specs.md` — 표지 현황, `docs/COVER_PROMPTS_lhopital_pixel.md` — 젠스파크용 그림 프롬프트(표지 14 + 설명 그림 12), `docs/WORK_NOTES.md` — 사실 카드·원자료 바로잡기·검산·검증 기록, `docs/PERSONA_REVIEW.md` — 페르소나 검사 결과
 - `cover_manifest.json` — 표지·온톨로지 현황판 연결 파일
 
 글 · 안상선 (https://adminmrobo.github.io/who_am_i/who_am_i.html) · (주)M-Robo 대표
