@@ -1,6 +1,6 @@
 # 시리즈 공용 데이터
 SERIES = '로피탈 교실 — 0/0의 정체를 밝히는 수업'
-SITE = 'https://adminmrobo.github.io/lhopital_lab/'
+SITE = 'https://adminmrobo.github.io/adminmrobo-lhopital_lab/'
 AUTHOR = {'name': '안상선', 'en': 'Ahn Sangsun', 'site': 'https://adminmrobo.github.io/who_am_i/who_am_i.html', 'org': '(주)M-Robo 대표'}
 
 # who: (이름, 이 시리즈의 자리, 기본 표정, 한 줄 소개)

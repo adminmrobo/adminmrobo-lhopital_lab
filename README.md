@@ -5,7 +5,7 @@
 - 선생님: 박사 · 조교: 초파리 연구원, 주판봇 · 수강생: 인턴 시아, 인턴 모아, 조수 하루, 미공개 X1·X2·X3
 - 1조 「분자조」 시아·하루·X1 / 2조 「분모조」 모아·X2·X3 (로피탈은 분자와 분모를 따로 미분하니까요)
 
-**바로 보기:** https://adminmrobo.github.io/lhopital_lab/ (GitHub Pages를 켜면 열려요)
+**바로 보기:** https://adminmrobo.github.io/adminmrobo-lhopital_lab/ (GitHub Pages를 켜면 열려요)
 
 ## 목차
 
