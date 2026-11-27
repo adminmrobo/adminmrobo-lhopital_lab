@@ -16,7 +16,7 @@
 |---|---|---|---|
 | 표지 14장 | 16:9 · 1920×1080 | `img/cover/cover_00~12.webp`, `cover_practice.webp` | 이미 연결됨 — 같은 이름으로 바꿔 넣고 `python3 tools/build.py` |
 | 공유 미리보기 | 1200×630 | `img/og/og_*.webp` | 표지 가운데를 잘라 만듦 |
-| 장별 설명 그림 12장 | 3:2 · 1200×800 | `img/scene/scene_01_lv1.webp` ~ `scene_12_lv1.webp` | 이미 연결됨 — 파일이 있으면 각 장 1단계 「일상으로 치면」 자리에 자동으로 들어감 |
+| 장별 설명 그림 12장 | 3:2 · 1200×800 | `img/scene/scene_NN_lvK.webp` | 반영 완료 (2026-11-28) — 그림이 보여 주는 비유의 단계(K)에 들어감: 02·03·04·06·07장은 2단계, 나머지는 1단계 |
 
 크기를 맞출 때는 '가장 가까운 이웃'(NEAREST) 방식으로 줄이고 무손실 WebP로 저장합니다(픽셀이 뭉개지지 않게).
 
@@ -314,7 +314,7 @@ Composition: keep every face and hand inside the central safe area (8% margin on
 No text, no letters, no numbers, no formulas, no speech bubbles, no logos, no school uniform, no weapons, no real brands.
 ```
 
-### B2. 02장 동시 도착 경주 — `scene_02_lv1.webp`
+### B2. 02장 동시 도착 경주 — `scene_02_lv2.webp`
 
 - 참고 표정: 모아 E12 · 시아 E09 · 초파리 연구원 E07
 - 넣는 곳: 02_zero_over_zero.html 1단계 「일상으로 치면」 상자
@@ -331,7 +331,7 @@ Composition: keep every face and hand inside the central safe area (8% margin on
 No text, no letters, no numbers, no formulas, no speech bubbles, no logos, no school uniform, no weapons, no real brands.
 ```
 
-### B3. 03장 언덕 위의 확대경 — `scene_03_lv1.webp`
+### B3. 03장 언덕 위의 확대경 — `scene_03_lv2.webp`
 
 - 참고 표정: 조수 하루 E19 · 박사 E08 · 초파리 연구원 E07
 - 넣는 곳: 03_slope_derivative.html 1단계 「일상으로 치면」 상자
@@ -348,7 +348,7 @@ Composition: keep every face and hand inside the central safe area (8% margin on
 No text, no letters, no numbers, no formulas, no speech bubbles, no logos, no school uniform, no weapons, no real brands.
 ```
 
-### B4. 04장 같은 바닥에서 출발한 두 비탈길 — `scene_04_lv1.webp`
+### B4. 04장 같은 바닥에서 출발한 두 비탈길 — `scene_04_lv2.webp`
 
 - 참고 표정: 시아 E12 · 모아 E09 · 박사 E08
 - 넣는 곳: 04_tangent_ratio.html 1단계 「일상으로 치면」 상자
@@ -382,7 +382,7 @@ Composition: keep every face and hand inside the central safe area (8% margin on
 No text, no letters, no numbers, no formulas, no speech bubbles, no logos, no school uniform, no weapons, no real brands.
 ```
 
-### B6. 06장 젓가락 시험 — `scene_06_lv1.webp`
+### B6. 06장 젓가락 시험 — `scene_06_lv2.webp`
 
 - 참고 표정: 모아 E12 · X2 E01 · 주판봇 E16
 - 넣는 곳: 06_repeat_and_stop.html 1단계 「일상으로 치면」 상자
@@ -399,7 +399,7 @@ Composition: keep every face and hand inside the central safe area (8% margin on
 No text, no letters, no numbers, no formulas, no speech bubbles, no logos, no school uniform, no weapons, no real brands.
 ```
 
-### B7. 07장 자라기 경주와 회전문 — `scene_07_lv1.webp`
+### B7. 07장 자라기 경주와 회전문 — `scene_07_lv2.webp`
 
 - 참고 표정: X3 E16 · 주판봇 E16 · 초파리 연구원 E07
 - 넣는 곳: 07_infinity_race.html 1단계 「일상으로 치면」 상자

@@ -252,7 +252,7 @@ footer .nextprev a{background:var(--panel);border:1px solid var(--rule);border-r
 img.scene{display:block;width:100%;height:auto;border-radius:8px;border:1px solid var(--rule);margin:8px 0 6px;background:#fff}
 @media (max-width:620px){
  .cover.has-img{aspect-ratio:auto;min-height:0}
- .cover.has-img .cimg{position:static;display:block;height:auto;aspect-ratio:10/9;object-fit:cover;object-position:left center}
+ .cover.has-img .cimg{position:static;display:block;height:auto;aspect-ratio:16/9;object-fit:cover}
  .cover.has-img .ctext{position:static;width:auto;padding:14px 18px 18px}
 }
 /* 로피탈 교실 추가 */
@@ -301,3 +301,13 @@ img.scene{display:block;width:100%;height:auto;border-radius:8px;border:1px soli
 .cover.has-img .ctext h1{color:var(--text)}
 .cover.has-img .ctext p{color:#33414d}
 @media (max-width:620px){.cover.has-img .ctext{background:none;border:0;box-shadow:none;border-radius:0}}
+
+/* 젠스파크 그림 반영: 생성 그림은 픽셀 격자가 정확하지 않아 축소 시 부드럽게 */
+.cover.has-img .cimg,img.scene{image-rendering:auto}
+img.scene{width:100%;height:auto;border-radius:10px;border:1px solid var(--rule);margin:8px 0}
+/* 오프닝 한 장 만화: 넓은 화면은 말풍선 위에 글, 좁은 화면은 아래 자막 */
+.cmx{position:relative;max-width:640px;margin:12px auto;container-type:inline-size}
+.cmx img{display:block;width:100%;height:auto;border-radius:6px}
+.cmx .bt2{position:absolute;display:flex;align-items:center;justify-content:center;text-align:center;font-weight:700;color:#16212b;line-height:1.25;font-size:2.6cqw;word-break:keep-all;padding:0 .4%}
+.cmx-cap{max-width:640px;margin:4px auto 14px;padding-left:1.4em;display:none}
+@media (max-width:560px){.cmx .bt2{display:none}.cmx-cap{display:block}}

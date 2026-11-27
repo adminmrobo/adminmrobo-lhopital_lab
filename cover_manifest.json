@@ -3,7 +3,7 @@
  "title_ko": "로피탈 교실",
  "site_title": "로피탈 교실 · 미분이 아직 헷갈리는 학생도 따라오는 로피탈의 정리 12장 + 실전 연습장",
  "site_url": "https://adminmrobo.github.io/adminmrobo-lhopital_lab/",
- "updated": "2026-11-25",
+ "updated": "2026-11-28",
  "ontology": {
   "pages": [
    {
@@ -93,7 +93,7 @@
    "id": "cover_00",
    "role": "cover",
    "path": "index.html#top",
-   "status": "substitute",
+   "status": "final",
    "characters": [
     "doc",
     "fly",
@@ -102,301 +102,409 @@
     "moa",
     "asst"
    ],
-   "note": "대체 표지: make_covers.py, 480×270 격자 4배 NEAREST, 무손실 WebP",
+   "note": "Genspark 픽셀풍 그림 반영 (2026-11-28), WebP q90",
    "file": "img/cover/cover_00.webp",
    "size": [
     1920,
     1080
-   ],
-   "grid": [
-    480,
-    270
    ]
   },
   {
    "id": "cover_01",
    "role": "cover",
    "path": "01_limits.html#top",
-   "status": "substitute",
+   "status": "final",
    "characters": [
     "doc",
     "fly",
     "robo",
     "sia"
    ],
-   "note": "대체 표지: make_covers.py, 480×270 격자 4배 NEAREST, 무손실 WebP",
+   "note": "Genspark 픽셀풍 그림 반영 (2026-11-28), WebP q90",
    "file": "img/cover/cover_01.webp",
    "size": [
     1920,
     1080
-   ],
-   "grid": [
-    480,
-    270
    ]
   },
   {
    "id": "cover_02",
    "role": "cover",
    "path": "02_zero_over_zero.html#top",
-   "status": "substitute",
+   "status": "final",
    "characters": [
     "doc",
     "fly",
     "robo",
     "moa"
    ],
-   "note": "대체 표지: make_covers.py, 480×270 격자 4배 NEAREST, 무손실 WebP",
+   "note": "Genspark 픽셀풍 그림 반영 (2026-11-28), WebP q90",
    "file": "img/cover/cover_02.webp",
    "size": [
     1920,
     1080
-   ],
-   "grid": [
-    480,
-    270
    ]
   },
   {
    "id": "cover_03",
    "role": "cover",
    "path": "03_slope_derivative.html#top",
-   "status": "substitute",
+   "status": "final",
    "characters": [
     "doc",
     "fly",
     "robo",
     "asst"
    ],
-   "note": "대체 표지: make_covers.py, 480×270 격자 4배 NEAREST, 무손실 WebP",
+   "note": "Genspark 픽셀풍 그림 반영 (2026-11-28), WebP q90",
    "file": "img/cover/cover_03.webp",
    "size": [
     1920,
     1080
-   ],
-   "grid": [
-    480,
-    270
    ]
   },
   {
    "id": "cover_04",
    "role": "cover",
    "path": "04_tangent_ratio.html#top",
-   "status": "substitute",
+   "status": "final",
    "characters": [
     "doc",
     "fly",
     "robo",
     "sia"
    ],
-   "note": "대체 표지: make_covers.py, 480×270 격자 4배 NEAREST, 무손실 WebP",
+   "note": "Genspark 픽셀풍 그림 반영 (2026-11-28), WebP q90",
    "file": "img/cover/cover_04.webp",
    "size": [
     1920,
     1080
-   ],
-   "grid": [
-    480,
-    270
    ]
   },
   {
    "id": "cover_05",
    "role": "cover",
    "path": "05_lhopital_rule.html#top",
-   "status": "substitute",
+   "status": "final",
    "characters": [
     "doc",
     "fly",
     "robo",
     "robo"
    ],
-   "note": "대체 표지: make_covers.py, 480×270 격자 4배 NEAREST, 무손실 WebP",
+   "note": "Genspark 픽셀풍 그림 반영 (2026-11-28), WebP q90",
    "file": "img/cover/cover_05.webp",
    "size": [
     1920,
     1080
-   ],
-   "grid": [
-    480,
-    270
    ]
   },
   {
    "id": "cover_06",
    "role": "cover",
    "path": "06_repeat_and_stop.html#top",
-   "status": "substitute",
+   "status": "final",
    "characters": [
     "doc",
     "fly",
     "robo",
     "x2"
    ],
-   "note": "대체 표지: make_covers.py, 480×270 격자 4배 NEAREST, 무손실 WebP",
+   "note": "Genspark 픽셀풍 그림 반영 (2026-11-28), WebP q90",
    "file": "img/cover/cover_06.webp",
    "size": [
     1920,
     1080
-   ],
-   "grid": [
-    480,
-    270
    ]
   },
   {
    "id": "cover_07",
    "role": "cover",
    "path": "07_infinity_race.html#top",
-   "status": "substitute",
+   "status": "final",
    "characters": [
     "doc",
     "fly",
     "robo",
     "x3"
    ],
-   "note": "대체 표지: make_covers.py, 480×270 격자 4배 NEAREST, 무손실 WebP",
+   "note": "Genspark 픽셀풍 그림 반영 (2026-11-28), WebP q90",
    "file": "img/cover/cover_07.webp",
    "size": [
     1920,
     1080
-   ],
-   "grid": [
-    480,
-    270
    ]
   },
   {
    "id": "cover_08",
    "role": "cover",
    "path": "08_other_forms.html#top",
-   "status": "substitute",
+   "status": "final",
    "characters": [
     "doc",
     "fly",
     "robo",
     "moa"
    ],
-   "note": "대체 표지: make_covers.py, 480×270 격자 4배 NEAREST, 무손실 WebP",
+   "note": "Genspark 픽셀풍 그림 반영 (2026-11-28), WebP q90",
    "file": "img/cover/cover_08.webp",
    "size": [
     1920,
     1080
-   ],
-   "grid": [
-    480,
-    270
    ]
   },
   {
    "id": "cover_09",
    "role": "cover",
    "path": "09_mistakes_calc.html#top",
-   "status": "substitute",
+   "status": "final",
    "characters": [
     "doc",
     "fly",
     "robo",
     "fly"
    ],
-   "note": "대체 표지: make_covers.py, 480×270 격자 4배 NEAREST, 무손실 WebP",
+   "note": "Genspark 픽셀풍 그림 반영 (2026-11-28), WebP q90",
    "file": "img/cover/cover_09.webp",
    "size": [
     1920,
     1080
-   ],
-   "grid": [
-    480,
-    270
    ]
   },
   {
    "id": "cover_10",
    "role": "cover",
    "path": "10_mistakes_conditions.html#top",
-   "status": "substitute",
+   "status": "final",
    "characters": [
     "doc",
     "fly",
     "robo",
     "asst"
    ],
-   "note": "대체 표지: make_covers.py, 480×270 격자 4배 NEAREST, 무손실 WebP",
+   "note": "Genspark 픽셀풍 그림 반영 (2026-11-28), WebP q90",
    "file": "img/cover/cover_10.webp",
    "size": [
     1920,
     1080
-   ],
-   "grid": [
-    480,
-    270
    ]
   },
   {
    "id": "cover_11",
    "role": "cover",
    "path": "11_history_ai.html#top",
-   "status": "substitute",
+   "status": "final",
    "characters": [
     "doc",
     "fly",
     "robo",
     "moa"
    ],
-   "note": "대체 표지: make_covers.py, 480×270 격자 4배 NEAREST, 무손실 WebP",
+   "note": "Genspark 픽셀풍 그림 반영 (2026-11-28), WebP q90",
    "file": "img/cover/cover_11.webp",
    "size": [
     1920,
     1080
-   ],
-   "grid": [
-    480,
-    270
    ]
   },
   {
    "id": "cover_12",
    "role": "cover",
    "path": "12_final_review.html#top",
-   "status": "substitute",
+   "status": "final",
    "characters": [
     "doc",
     "fly",
     "robo",
     "doc"
    ],
-   "note": "대체 표지: make_covers.py, 480×270 격자 4배 NEAREST, 무손실 WebP",
+   "note": "Genspark 픽셀풍 그림 반영 (2026-11-28), WebP q90",
    "file": "img/cover/cover_12.webp",
    "size": [
     1920,
     1080
-   ],
-   "grid": [
-    480,
-    270
    ]
   },
   {
    "id": "cover_practice",
    "role": "cover",
    "path": "practice/index.html#top",
-   "status": "substitute",
+   "status": "final",
    "characters": [
     "doc",
     "asst",
     "moa",
     "robo"
    ],
-   "note": "대체 표지",
+   "note": "Genspark 픽셀풍 그림 반영 (2026-11-28), WebP q90",
    "file": "img/cover/cover_practice.webp",
    "size": [
     1920,
     1080
+   ]
+  },
+  {
+   "id": "comic_lhopital",
+   "role": "scene",
+   "path": "index.html#comic",
+   "status": "final",
+   "characters": [
+    "doc",
+    "robo",
+    "asst",
+    "sia",
+    "moa",
+    "fly"
    ],
-   "grid": [
-    480,
-    270
+   "note": "오프닝 4컷 만화, 말풍선 글은 HTML",
+   "file": "img/scene/comic_lhopital.webp",
+   "size": [
+    1200,
+    1200
+   ]
+  },
+  {
+   "id": "scene_01_lv1",
+   "role": "scene",
+   "path": "#lv1",
+   "status": "final",
+   "note": "장별 설명 그림",
+   "file": "img/scene/scene_01_lv1.webp",
+   "size": [
+    1200,
+    800
+   ]
+  },
+  {
+   "id": "scene_02_lv2",
+   "role": "scene",
+   "path": "#lv2",
+   "status": "final",
+   "note": "장별 설명 그림",
+   "file": "img/scene/scene_02_lv2.webp",
+   "size": [
+    1200,
+    800
+   ]
+  },
+  {
+   "id": "scene_03_lv2",
+   "role": "scene",
+   "path": "#lv2",
+   "status": "final",
+   "note": "장별 설명 그림",
+   "file": "img/scene/scene_03_lv2.webp",
+   "size": [
+    1200,
+    800
+   ]
+  },
+  {
+   "id": "scene_04_lv2",
+   "role": "scene",
+   "path": "#lv2",
+   "status": "final",
+   "note": "장별 설명 그림",
+   "file": "img/scene/scene_04_lv2.webp",
+   "size": [
+    1200,
+    800
+   ]
+  },
+  {
+   "id": "scene_05_lv1",
+   "role": "scene",
+   "path": "#lv1",
+   "status": "final",
+   "note": "장별 설명 그림",
+   "file": "img/scene/scene_05_lv1.webp",
+   "size": [
+    1200,
+    800
+   ]
+  },
+  {
+   "id": "scene_06_lv2",
+   "role": "scene",
+   "path": "#lv2",
+   "status": "final",
+   "note": "장별 설명 그림",
+   "file": "img/scene/scene_06_lv2.webp",
+   "size": [
+    1200,
+    800
+   ]
+  },
+  {
+   "id": "scene_07_lv2",
+   "role": "scene",
+   "path": "#lv2",
+   "status": "final",
+   "note": "장별 설명 그림",
+   "file": "img/scene/scene_07_lv2.webp",
+   "size": [
+    1200,
+    800
+   ]
+  },
+  {
+   "id": "scene_08_lv1",
+   "role": "scene",
+   "path": "#lv1",
+   "status": "final",
+   "note": "장별 설명 그림",
+   "file": "img/scene/scene_08_lv1.webp",
+   "size": [
+    1200,
+    800
+   ]
+  },
+  {
+   "id": "scene_09_lv1",
+   "role": "scene",
+   "path": "#lv1",
+   "status": "final",
+   "note": "장별 설명 그림",
+   "file": "img/scene/scene_09_lv1.webp",
+   "size": [
+    1200,
+    800
+   ]
+  },
+  {
+   "id": "scene_10_lv1",
+   "role": "scene",
+   "path": "#lv1",
+   "status": "final",
+   "note": "장별 설명 그림",
+   "file": "img/scene/scene_10_lv1.webp",
+   "size": [
+    1200,
+    800
+   ]
+  },
+  {
+   "id": "scene_11_lv1",
+   "role": "scene",
+   "path": "#lv1",
+   "status": "final",
+   "note": "장별 설명 그림",
+   "file": "img/scene/scene_11_lv1.webp",
+   "size": [
+    1200,
+    800
+   ]
+  },
+  {
+   "id": "scene_12_lv1",
+   "role": "scene",
+   "path": "#lv1",
+   "status": "final",
+   "note": "장별 설명 그림",
+   "file": "img/scene/scene_12_lv1.webp",
+   "size": [
+    1200,
+    800
    ]
   }
  ]

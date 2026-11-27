@@ -67,7 +67,9 @@ def build(B, chs):
         msg('doc', 'smile', ['정리 잘했어요, 주판봇. 이제 여러분도 아래에서 직접 해 봐요 👇'], t='오전 9:07'),
     ])
     o.append('<section class="level" id="comic"><div class="wrap"><h2>오프닝 단톡방 — 「로피탈은 외우면 되는 공식 아니에요?」</h2>'
-      '<p>수업 전날 밤, 로피탈 교실 단톡방에 박사님이 문제를 하나 올렸어요. 하루의 휴대폰 화면으로 봐요.</p>'
+      '<div class="cmx"><img loading="lazy" src="img/scene/comic_lhopital.webp" width="1200" height="1200" alt="4컷 만화 — 박사가 문제를 내고, 하루가 로피탈은 외우면 끝이라고 자신만만하다가 시아·모아·초파리에게 살짝 혼나 머리가 멈추고, 주판봇이 다정하게 설명한다"><span class="bt2" style="left:53%;top:4%;width:18%;height:9%">로피탈은 외우면 끝~! 😎</span><span class="bt2" style="left:2.5%;top:52.6%;width:13%;height:8.4%">대입은 했어?</span><span class="bt2" style="left:33.6%;top:52.6%;width:14%;height:8.4%">로피탈 없이는?</span><span class="bt2" style="left:33.3%;top:87%;width:14%;height:8%">오답 ①이야!</span><span class="bt2" style="left:54%;top:52.8%;width:29%;height:8.8%">외우는 공식 말고, 확인하고 쓰는 도구예요!</span></div>'
+      '<ol class="cmx-cap"><li>박사: 오늘의 첫 문제, 어떻게 풀까요?</li><li>하루: 로피탈은 외우면 끝~! 😎</li><li>시아: 대입은 했어? · 모아: 로피탈 쓰지 말고 풀면? · 초파리: 09장 오답 ①이야</li><li>주판봇: 외우는 공식 말고, 확인하고 쓰는 도구예요!</li></ol>'
+      '<p>이 장면을 단톡방에서 처음부터 볼까요? 수업 전날 밤, 박사님이 문제를 하나 올렸어요. 하루의 휴대폰 화면으로 봐요.</p>'
       '<div class="chat" aria-label="로피탈 교실 단톡방 대화"><div class="chead"><span class="back" aria-hidden="true">‹</span><b>로피탈 교실 단톡방</b><span class="cnt">9</span><button type="button" class="replay" aria-label="대화 다시 재생">▶ 다시 재생</button></div><div class="cbody">' + chat + '</div>'
       '<div class="cfoot" aria-hidden="true"><span class="plus">＋</span><span class="inp">메시지 입력</span><span class="send">전송</span></div></div>'
       '<script>(function(){var c=document.querySelector("#comic .chat");if(!c)return;var b=c.querySelector(".replay"),ms=[].slice.call(c.querySelectorAll(".cbody>*"));'

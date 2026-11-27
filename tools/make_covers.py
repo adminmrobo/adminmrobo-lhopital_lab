@@ -112,6 +112,8 @@ def make(SP, key, chars, motif, seed):
 
 
 def main():
+    if '--force' not in sys.argv:
+        print('젠스파크 표지가 들어가 있어요. 대체 표지로 덮어쓰려면 --force'); return
     SP = load_sprites()
     sys.path.insert(0, os.path.join(ROOT, 'content'))
     os.makedirs(os.path.join(ROOT, 'img', 'cover'), exist_ok=True)
