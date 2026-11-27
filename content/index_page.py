@@ -22,13 +22,40 @@ def build(B, chs):
     B.GLOSS = {'극한': 'x가 어떤 값에 한없이 다가갈 때 식의 값이 향해 가는 곳. 꼭 그 값이 될 필요는 없다.',
                '부정형': '0/0, ∞/∞처럼 대입만으로는 값을 정할 수 없는 꼴. 「답이 없다」가 아니라 「아직 모른다」는 뜻.'}
     o = [B.head(B.SERIES + ' · 오리엔테이션', '미분이 아직 헷갈리는 학생도 따라오는 로피탈의 정리 12장 + 실전 연습장. 박사 선생님과 두 조교, 수강생 6명이 함께하는 연구실 해설 시리즈.')]
-    o.append('<nav class="top" aria-label="목차"><a class="logo" href="index.html">로피탈 교실</a><a href="#three">3줄 요약</a><a href="#check">1분 점검</a><a href="#cast">등장인물</a><a href="#pillars">네 마당</a><a href="#tracks">과정</a><a href="#toc">목차</a><a href="#how">수업 방식</a><a href="practice/index.html">실전 연습장</a></nav><div id="prog"></div>')
+    o.append('<nav class="top" aria-label="목차"><a class="logo" href="index.html">로피탈 교실</a><a href="#comic">오프닝 만화</a><a href="#three">3줄 요약</a><a href="#check">1분 점검</a><a href="#cast">등장인물</a><a href="#pillars">네 마당</a><a href="#tracks">과정</a><a href="#toc">목차</a><a href="#how">수업 방식</a><a href="practice/index.html">실전 연습장</a></nav><div id="prog"></div>')
     o.append(B.cover_html('cover_00', '로피탈 교실', '오리엔테이션 · 00', '0/0의 정체를 밝히는 수업 — 12장 + 실전 연습장', '로피탈 교실 표지 — 박사, 조교 둘, 수강생 여섯이 칠판의 0/0 앞에 모인 강의실'))
     o.append('''<header class="hero"><div class="wrap"><div class="kicker">연구실 해설 시리즈 · 미적분 입문</div><h1>로피탈 교실 — 0/0의 정체를 밝히는 수업</h1>
 <p class="q">핵심 질문 — 0 ÷ 0처럼 보이는 식의 진짜 값은 어떻게 알아낼까? 그리고 그 방법은 언제 틀릴까?</p>
 <p>x = 0을 넣으면 0/0이 되는 식이 있어요. 계산기는 「오류」를 내지만, x를 0에 [[극한|한없이 가까이]] 보내면 식의 값은 또렷한 한 숫자로 모여요. 이 시리즈는 그 숫자를 찾는 도구, <b>로피탈의 정리</b>를 12장에 걸쳐 배워요. 미분을 아직 잘 몰라도 괜찮아요. 03장에서 기울기부터 다시 잡고 시작합니다.</p>
 <div class="kpis"><div class="kpi g"><b>12장</b><span>한 장에 개념 2~3단계</span></div><div class="kpi m"><b>4마당</b><span>극한·규칙·오용·AI</span></div><div class="kpi a"><b>10가지</b><span>수업 형식 (토론·배틀·발표…)</span></div><div class="kpi r"><b>3곳</b><span>실전 연습장 사업장</span></div></div>''' + says([('doc', 'front', '안녕하세요, 이 교실의 선생님 박사입니다. 미분이 아직 헷갈려도 괜찮아요. 「다가간다」, 「기울기」, 「비교한다」 세 가지만 같이 잡으면 끝까지 갈 수 있어요.'),
                                                                                                                                                     ('moa', 'cheer', '저희 수강생 6명이 먼저 헤매 볼게요. 같이 가요!')]) + '</div></header>')
+    def cimg(w, m, big=False):
+        return img(w, m, cls='big' if big else '')
+    def bub(w, t):
+        return '<div class="bub"><b class="nm">%s</b>%s</div>' % (esc(B.PEOPLE[w][0]), t)
+    o.append('<section class="level" id="comic"><div class="wrap"><h2>오프닝 만화 — 「로피탈은 외우면 되는 공식 아니에요?」</h2>'
+      '<div class="comic">'
+      '<div class="cp"><span class="no">①</span><div class="board">lim<sub>x→1</sub> (1 − x¹⁰⁰) / (1 − x²)<small>오늘의 첫 문제</small></div>'
+      + bub('doc', '자, 첫 문제예요. x에 1을 넣으면… 0/0이네요. 어떻게 풀까요?') + '<div class="cast2">' + cimg('doc', 'board') + cimg('robo', 'calc') + '</div></div>'
+      '<div class="cp"><span class="no">②</span>' + bub('asst', '저 이거 알아요! 로피탈은 <b>공식</b>이잖아요. 분수만 보이면 위아래 미분! 외우면 끝~ 😎')
+      + '<div class="cast2">' + cimg('asst', 'proud', True) + '</div></div>'
+      '<div class="cp"><span class="no">③</span><span class="boom">하루야~</span>'
+      + bub('sia', '대입은 했어요? 점검표는요?') + bub('fly', '「분수면 미분」은 09장 오답 ①이야.') + bub('moa', '그럼 「로피탈 쓰지 말고 풀어 봐」 하면요…?')
+      + '<div class="cast2"><span class="spin" aria-hidden="true"></span>' + cimg('sia', 'think') + cimg('asst', 'shock', True) + cimg('fly', 'clip') + cimg('moa', 'think') + '</div></div>'
+      '<div class="cp"><span class="no">④</span>' + bub('robo', '괜찮아요, 하루. 저도 처음엔 미분부터 눌렀어요. 로피탈은 외우는 공식이 아니라 <b>조건이 맞을 때만 쓰는 도구</b>예요. 왜 그런지 차근차근 볼까요?')
+      + '<div class="cast2">' + cimg('asst', 'sigh') + cimg('robo', 'explain', True) + cimg('doc', 'smile') + '</div></div>'
+      '</div>'
+      '<div class="rbox"><b>주판봇의 친절한 설명</b><ol>'
+      '<li><b>먼저 대입.</b> x = 1이면 위 1 − 1 = 0, 아래 1 − 1 = 0 → 0/0. 「정해지지 않은 꼴」이라 도구가 필요해요(02장). 대입해서 보통 수가 나왔다면 로피탈을 쓰면 오히려 틀려요(09장).</li>'
+      '<li><b>로피탈을 쓴다면</b> 위는 위끼리, 아래는 아래끼리 따로 미분: (1 − x¹⁰⁰)′ = −100x⁹⁹, (1 − x²)′ = −2x → x = 1에서 −100 ÷ −2 = <b>50</b>. 점검표 4가지를 지켰을 때만 이 답을 믿을 수 있어요(05장).</li>'
+      '<li><b>로피탈 없이도</b> 풀려요. 1 − x¹⁰⁰ = (1 − x²)(1 + x² + x⁴ + … + x⁹⁸). 같은 짐 (1 − x²)를 내려놓으면 괄호 안에 항이 50개, x = 1이면 1이 50개 → <b>50</b>(02장 약분).</li>'
+      '<li><b>왜 50인지 그림으로</b>: x = 1 근처에서 위 식은 기울기 100으로, 아래 식은 기울기 2로 0을 향해 달려요. 같은 결승선에 닿는 두 선수의 빠르기 비 100 : 2 = 50이에요(04장 확대경).</li>'
+      '</ol><p>그래서 로피탈은 「외우는 공식」이 아니라 「언제 써도 되는지 확인하고 쓰는 도구」예요. 공식만 외우면 「쓰지 말고 풀어 봐」라는 말에 머리가 멈추지만, 이유를 알면 다른 길(약분)도 바로 보여요.</p></div>'
+      '<div class="panel"><div class="ptitle">직접 해 보기 ① — 버튼으로 풀기</div><div data-w="lh" data-o="' + esc(json.dumps({'keys': ['meme']})) + '"></div></div>'
+      '<div class="panel"><div class="ptitle">직접 해 보기 ② — x를 1에 가까이 넣어 확인</div><div data-w="table" data-o="' + esc(json.dumps({'keys': ['meme'], 'K': 2, 'Kmax': 4})) + '"></div></div>'
+      '<p class="note">x = 0.99에서 31.86, 0.999에서 47.63, 0.9999에서 49.76 — 50으로 천천히 다가가요. 표만 보고 답을 정하기 어려운 이유이기도 해요. 계산(약분·로피탈)으로 결정하고, 표는 확인에 써요(06장).</p>'
+      '<p class="note">만화 아이디어: @the_calculusguy의 로피탈 밈. 원본 그림은 쓰지 않고 연구실 캐릭터로 다시 그렸어요.</p>'
+      '</div></section>')
     o.append('''<div class="wrap"><div class="three" id="three"><h2>처음 오신 분께 — 이 시리즈를 3줄로</h2><ol>
 <li><b>무엇을:</b> 0/0, ∞/∞처럼 정해지지 않은 꼴의 극한을, 분자와 분모를 「따로 미분해서」 구하는 로피탈의 정리와 그 조건을 배웁니다.</li>
 <li><b>왜 중요한가:</b> 순간 속도, 복리 이자의 한계, 함수끼리의 자라는 속도 비교가 모두 이 질문에서 나와요. 그리고 조건을 무시하면 그럴듯한 오답이 나와서, 오용 사례를 아는 것이 규칙만큼 중요해요.</li>

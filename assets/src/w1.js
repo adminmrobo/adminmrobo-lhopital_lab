@@ -51,6 +51,7 @@ var FN={
   sinc:{t:'sin x / x',a:0,f:function(x){return Math.sin(x)/x;},lim:1,yr:[-0.3,1.2],xr:[-10,10]},
   sub:{t:'1/x − 1/sin x',a:0,f:function(x){return 1/x-1/Math.sin(x);},lim:0,yr:[-0.5,0.5],xr:[-2.5,2.5]},
   xlnx:{t:'x · ln x',a:0,f:function(x){return x>0?x*Math.log(x):NaN;},lim:0,yr:[-0.5,0.5],xr:[0,1.2],side:'right'},
+  meme:{t:'(1 − x¹⁰⁰) / (1 − x²)',a:1,f:function(x){return (1-Math.pow(x,100))/(1-x*x);},lim:50,yr:[0,60],xr:[0.6,1.03]},
   notf:{t:'(x² + 1) / (x + 1)',a:1,f:function(x){return (x*x+1)/(x+1);},lim:1,yr:[0,2],xr:[0,2]}
 };
 window.FN=FN;

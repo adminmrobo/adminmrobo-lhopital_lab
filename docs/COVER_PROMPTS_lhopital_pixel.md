@@ -510,3 +510,24 @@ No text, no letters, no numbers, no formulas, no speech bubbles, no logos, no sc
 | 연구실 금지 표현 3종(사용자 지정) | 0건 |
 | 독자를 낮춰 부르는 줄임말 두 가지 | 0건 |
 | 그림 속 글자·숫자·수식 요청 | 0건 (모든 블록에 금지 줄 포함) |
+
+---
+
+## D. 오프닝 만화 (선택, 4컷 · 1:1)
+
+오리엔테이션의 「오프닝 만화」는 지금 캐릭터 팩 그림 + 말풍선(HTML)으로 만들어져 있어요. 한 장짜리 픽셀 만화로 바꾸고 싶을 때 쓰는 지시문이에요. 원작 밈(@the_calculusguy)의 애니메이션 캐릭터는 쓰지 않고, 2×2 구도와 「자신만만 → 머리가 멈춤」 흐름만 빌려요. 말풍선은 비워 두고 글은 페이지가 맡아요.
+
+- 참고 표정: 박사 E07 · 주판봇 E09·E07 · 조수 하루 E16·E24·E02 · 시아 E09 · 초파리 연구원 E10 · 모아 E09
+- 저장: `img/scene/comic_lhopital.webp` (1200×1200, NEAREST, 무손실)
+
+```
+Four-panel comic strip in a 2x2 grid, square 1:1, thick black panel borders, white gutters.
+Match the art style, proportions and colors of the attached reference images exactly (if there are no reference images: 16-bit SNES-era RPG pixel art, bold dark outline, 2-3 tone shading, small highlights).
+Bright daytime classroom inside a lab, clean white background, a dark green chalkboard with a single chalk fraction-bar shape (no symbols).
+Panel 1 (top left): a chibi scientist with thin teal rectangular glasses, spiky black hair with one white streak, small ponytail at the back, white lab coat over black vest and tie points at the chalkboard; a boxy beige retro CRT-monitor robot, dark green screen face with mint pixel eyes and mouth, short antenna topped with a red-brown abacus bead, gray segmented arms, two small tank treads stands beside him with a small question mark.
+Panel 2 (top right): close-up of a girl researcher with long pink hair with two round buns and a navy streak, blue eyes, white lab coat over lavender hoodie, very confident smug grin, one finger raised, sparkles around her. Empty speech bubble.
+Panel 3 (bottom left): the same girl frozen with wide shocked eyes, both hands on her head, a gray pixel loading-spinner circle above her head; around her a calm girl intern with long straight jet-black hair, charcoal-black maid dress with large gray bow, an anthropomorphic fruit fly researcher, black body, big red compound eyes, blue helmet with a gold stripe and pink and blue cables, white lab coat over a black vest, black gloves, transparent wings, and a gentle girl intern with long ash-beige wavy hair, white frilled maid headband, camel cardigan gently scold her with small sweat drops and wagging fingers (playful, not mean). Three empty speech bubbles.
+Panel 4 (bottom right): the boxy CRT robot kindly explains with an open hand next to a small chalk staircase of four steps; the pink-haired girl listens with a relieved sigh; the scientist smiles. Empty speech bubble.
+Mood: comic and warm, gentle teasing, no one is hurt or humiliated.
+No text, no letters, no numbers, no formulas inside the picture, no logos, no school uniform, no weapons, no real brands, no existing anime characters.
+```

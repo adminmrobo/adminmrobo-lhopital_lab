@@ -51,6 +51,7 @@ var FN={
   sinc:{t:'sin x / x',a:0,f:function(x){return Math.sin(x)/x;},lim:1,yr:[-0.3,1.2],xr:[-10,10]},
   sub:{t:'1/x − 1/sin x',a:0,f:function(x){return 1/x-1/Math.sin(x);},lim:0,yr:[-0.5,0.5],xr:[-2.5,2.5]},
   xlnx:{t:'x · ln x',a:0,f:function(x){return x>0?x*Math.log(x):NaN;},lim:0,yr:[-0.5,0.5],xr:[0,1.2],side:'right'},
+  meme:{t:'(1 − x¹⁰⁰) / (1 − x²)',a:1,f:function(x){return (1-Math.pow(x,100))/(1-x*x);},lim:50,yr:[0,60],xr:[0.6,1.03]},
   notf:{t:'(x² + 1) / (x + 1)',a:1,f:function(x){return (x*x+1)/(x+1);},lim:1,yr:[0,2],xr:[0,2]}
 };
 window.FN=FN;
@@ -227,6 +228,7 @@ var LH={
   cos2:{t:'(1 − cos x)/x², x → 0',s:[{e:'(1 − cos x) / x²',v:'0 / 0',d:1,dn:'(1 − cos x)′ = 0 − (−sin x) = sin x',dd:'(x²)′ = 2x'},{e:'sin x / (2x)',v:'0 / 0',d:1,dn:'(sin x)′ = cos x',dd:'(2x)′ = 2'},{e:'cos x / 2',v:'1 / 2',ans:'1/2'}]},
   ex2:{t:'(eˣ − 1 − x)/x², x → 0',s:[{e:'(eˣ − 1 − x) / x²',v:'0 / 0',d:1,dn:'(eˣ − 1 − x)′ = eˣ − 1',dd:'(x²)′ = 2x'},{e:'(eˣ − 1) / (2x)',v:'0 / 0',d:1,dn:'(eˣ − 1)′ = eˣ',dd:'(2x)′ = 2'},{e:'eˣ / 2',v:'1 / 2',ans:'1/2'}]},
   exq:{t:'(eˣ − 1)/(x² + x), x → 0',s:[{e:'(eˣ − 1) / (x² + x)',v:'0 / 0',d:1,dn:'(eˣ − 1)′ = eˣ',dd:'(x² + x)′ = 2x + 1'},{e:'eˣ / (2x + 1)',v:'1 / 1 = 1',ans:'1',bad:'eˣ / 2 → 1/2 (오답). 0/0이 아닌데 또 미분했어요.'}]},
+  meme:{t:'(1 − x¹⁰⁰)/(1 − x²), x → 1',s:[{e:'(1 − x¹⁰⁰) / (1 − x²)',v:'0 / 0',d:1,dn:'(1 − x¹⁰⁰)′ = −100x⁹⁹',dd:'(1 − x²)′ = −2x'},{e:'(−100x⁹⁹) / (−2x)',v:'−100 / −2 = 50',ans:'50'}],note:'로피탈 없이도 1 − x¹⁰⁰ = (1 − x²)(1 + x² + x⁴ + … + x⁹⁸)로 약분하면 1이 50개 → 50. 같은 답이에요.'},
   notf:{t:'(x² + 1)/(x + 1), x → 1',s:[{e:'(x² + 1) / (x + 1)',v:'2 / 2 = 1',ans:'1',bad:'2x / 1 → 2 (오답). 처음부터 0/0이 아니었어요.'}]},
   lnx:{t:'ln x / x, x → ∞',s:[{e:'ln x / x',v:'∞ / ∞',d:1,dn:'(ln x)′ = 1/x',dd:'(x)′ = 1'},{e:'(1/x) / 1',v:'0 / 1 = 0',ans:'0'}]},
   x2e:{t:'x² / eˣ, x → ∞',s:[{e:'x² / eˣ',v:'∞ / ∞',d:1,dn:'(x²)′ = 2x',dd:'(eˣ)′ = eˣ'},{e:'2x / eˣ',v:'∞ / ∞',d:1,dn:'(2x)′ = 2',dd:'(eˣ)′ = eˣ'},{e:'2 / eˣ',v:'2 / ∞ → 0',ans:'0'}]},
