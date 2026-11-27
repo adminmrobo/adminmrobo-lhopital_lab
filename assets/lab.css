@@ -295,3 +295,9 @@ img.scene{display:block;width:100%;height:auto;border-radius:8px;border:1px soli
 .chat .cfoot .inp{flex:1;color:#9aa6b1;font-size:14px}.chat .cfoot .plus{font-size:18px;color:#5b6874}.chat .cfoot .send{background:#fee500;border-radius:8px;padding:4px 10px;font-size:13px}
 @media (prefers-reduced-motion:reduce){.chat .typing i{animation:none}}
 .rbox{background:#fff;border:2px solid var(--accent);border-radius:10px;padding:14px 18px;margin:12px 0}
+
+/* 표지 제목 가독성: 어떤 표지 그림 위에서도 읽히도록 흰 바탕 상자 */
+.cover.has-img .ctext{background:rgba(255,255,255,.92);border:1px solid var(--rule);border-radius:12px;padding:14px 18px;box-shadow:0 4px 14px rgba(22,33,43,.10)}
+.cover.has-img .ctext h1{color:var(--text)}
+.cover.has-img .ctext p{color:#33414d}
+@media (max-width:620px){.cover.has-img .ctext{background:none;border:0;box-shadow:none;border-radius:0}}

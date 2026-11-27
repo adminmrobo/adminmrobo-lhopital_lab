@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """픽셀아트 대체 표지 (16비트 RPG 느낌, 흰 배경).
-480×270 픽셀 격자에 그린 뒤 NEAREST 4배 → 1920×1080 무손실 WebP.
+480×270 픽셀 격자에 그린 뒤(칠판·캐릭터는 왼쪽, 오른쪽 46%는 제목 자리) NEAREST 4배 → 1920×1080 무손실 WebP.
 공유 미리보기: 400×210을 잘라 NEAREST 3배 → 1200×630. 그림 안에 글자는 넣지 않는다(제목은 HTML).
 사용: python3 tools/make_covers.py"""
 import os, re, io, sys, math, base64, random, importlib.util
@@ -96,9 +96,9 @@ MOTIF = {
 
 def make(SP, key, chars, motif, seed):
     im, d = bg(seed)
-    board(d, 150, 28, 300, 150, MOTIF[motif], seed)
-    # 칠판 아래 분필 받침과 강의실 바닥
-    d.rectangle([146, 182, 454, 186], fill=(150, 110, 70))
+    # 칠판은 왼쪽 절반에 두고, 오른쪽 46%는 제목 자리로 비워 둔다
+    board(d, 18, 22, 228, 150, MOTIF[motif], seed)
+    d.rectangle([14, 176, 250, 180], fill=(150, 110, 70))
     x = 14
     for i, (who, mood) in enumerate(chars):
         sp = sprite(SP, who, mood)
@@ -107,7 +107,7 @@ def make(SP, key, chars, motif, seed):
         x += 52 if i < 3 else 46
     big = im.resize((1920, 1080), Image.NEAREST)
     big.save(os.path.join(ROOT, 'img', 'cover', key + '.webp'), 'WEBP', lossless=True)
-    og = im.crop((40, 20, 440, 230)).resize((1200, 630), Image.NEAREST)
+    og = im.crop((0, 10, 400, 220)).resize((1200, 630), Image.NEAREST)
     return og
 
 
@@ -123,7 +123,10 @@ def main():
         m = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(m)
         st = m.CH['star']
-        og = make(SP, 'cover_%02d' % n, [('doc', 'front'), ('fly', 'magnify'), ('robo', 'smile'), st], n, n)
+        base = [w for w in [('doc', 'front'), ('fly', 'magnify'), ('robo', 'smile')] if w[0] != st[0]]
+        if len(base) < 3:
+            base.append(('asst', 'spark'))
+        og = make(SP, 'cover_%02d' % n, base + [st], n, n)
         og.save(os.path.join(ROOT, 'img', 'og', 'og_%02d.webp' % n), 'WEBP', lossless=True)
     og = make(SP, 'cover_practice', [('doc', 'front'), ('asst', 'spark'), ('moa', 'cheer'), ('robo', 'calc')], 'practice', 99)
     og.save(os.path.join(ROOT, 'img', 'og', 'og_practice.webp'), 'WEBP', lossless=True)
